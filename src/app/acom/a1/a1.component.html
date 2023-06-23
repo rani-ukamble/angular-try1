@@ -1,1 +1,35 @@
 <p>a1 works!</p>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <header>Parent</header>
+
+        </div>
+        <div class="card-body">
+        pass data 
+        <!-- <input type="text" class="form-control" [(ngModel)]="EnterName"> -->
+
+        <!-- Direct value passed to child without clicking send button  -->
+        <input type="text" class="form-control" [(ngModel)]="parentData">
+
+        <input type="button" value="send" (click)="TransferData()" class="btn btn-primary">
+    </div>
+    <app-new [parentData]="parentData"></app-new>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        child to parent
+        <input type="text" value="{{value}}">
+        <app-new (send)="send($event)"></app-new>
+    </div>
+</div>
+
+
+
+
+
+

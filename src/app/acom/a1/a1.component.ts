@@ -7,6 +7,18 @@ import { Component,OnInit } from '@angular/core';
 })
 export class A1Component implements OnInit {
 
+  EnterName="ABC";
+  parentData=""
+
+
+  value="";
+  send(value: string){
+this.value=value;
+  }
+
+TransferData(){
+this.parentData=this.EnterName;
+}
 
 constructor(){
 

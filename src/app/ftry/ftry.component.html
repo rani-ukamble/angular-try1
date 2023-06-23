@@ -1,0 +1,31 @@
+<hr><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+
+                <label>Username : </label>
+                <input type="text" placeholder="Enter Username" class="form-control" ngModel name="username" required>
+                <label>Password : </label>
+                <input type="password" placeholder="Enter Password" class="form-control" ngModel name="password"
+                    required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<hr>
+<div class="row">
+    <div class="col-xs-3">
+        <h3> Entered Data</h3>
+        <p>Username: {{user.username}}</p>
+        <p>Password: {{user.password}}</p>
+        
+    </div>
+</div>
+
+<br><br>

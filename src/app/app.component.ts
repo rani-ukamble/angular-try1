@@ -12,4 +12,6 @@ export class AppComponent {
       this.title="Rani";
     },2000);
   }
+
+ 
 }

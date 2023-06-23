@@ -1,0 +1,75 @@
+<p>arr-add works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" name="" class="form-control" placeholder="username" [(ngModel)]="user">
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+        <div class="add-button">
+            <button type="button" class="btn btn-success" (click)="add()">create user</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <hr><br>
+                        <h2>Users</h2>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of arr">
+                        <td>
+                            {{user}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</div>
+
+<br><br>
+
+<!-- Push and Pop -->
+
+<div class="container-mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <input #myuser type="text" class="form-control" [placeholder]="Username">
+
+            <button class="btn btn-danger mt-3" (click)="onClick(myuser)">Create user</button>
+
+            <table class="table table-light mt-3">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Sr No.</th>
+                        <th>Username</th>
+                        <th>Delete User</th>
+                        <th>Edit user</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of arr1,index as userno">
+                        <td>{{userno+1}}</td>
+                        <td>{{i}}</td>
+                        <td>
+                            <button class="btn btn-success" (click)="onDelete(userno)">Delete user</button> 
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" (click)="onEdit(myuser)">Edit user</button> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
