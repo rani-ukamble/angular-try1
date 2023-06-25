@@ -25,11 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "D:/programming/pnew/node_modules/bootstrap/dist/css/bootstrap.css"
+             
+              
+              "D:/programming/angular_practice/pnew/src/styles.css",
+              "D:/programming/angular_practice/pnew/node_modules/bootstrap/dist/css/bootstrap.css"
+             
             ],
             "scripts": [
-              "D:/programming/pnew/node_modules/bootstrap/dist/js/bootstrap.js"
+              "D:/programming/angular_practice/pnew/node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
