@@ -6,6 +6,7 @@ import { FormGroup } from '@angular/forms';
   templateUrl: './arr-add.component.html',
   styleUrls: ['./arr-add.component.css']
 })
+
 export class ArrAddComponent {
 [x: string]: any;
 user:any;
